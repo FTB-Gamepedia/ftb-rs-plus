@@ -6,3 +6,4 @@ List of changes:
 * A possible build fix or two.
 * The bug that used "\" instead of "/" in file names was fixed.
 * Raises an error when "[" or "]" is in a filename- the Tilesheet extension will error with those contained.
+* Optiping manipulation is commented out.
