@@ -1,0 +1,16 @@
+[package]
+
+name = "ftb"
+version = "0.0.1"
+authors = ["Peter Atashian <retep998@gmail.com>"]
+
+[dependencies]
+regex = "*"
+regex_macros = "*"
+rustc-serialize = "*"
+
+[dependencies.lodepng]
+git = "https://github.com/retep998/lodepng-rs"
+
+[dependencies.image]
+git = "https://github.com/PistonDevelopers/image"

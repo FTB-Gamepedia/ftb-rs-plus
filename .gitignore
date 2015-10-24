@@ -3,3 +3,6 @@
 
 #Tilesheet nonsense
 /work/
+
+# OS X
+.DS_Store
