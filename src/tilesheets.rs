@@ -81,7 +81,7 @@ impl TilesheetManager {
             if path.extension().and_then(|x| x.to_str()) != Some("png") { continue }
             let name = path.file_stem().unwrap().to_str().unwrap();
             let name = if let Some(r) = renames.get(name) { &**r } else { name };
-            if name.contains("_") { panic!("Illegal name: {:?}", name) }
+            if name.contains("_") || name.contains("[") || name.contains("]") { panic!("Illegal name: {:?}", name) }
             let img = load(&path).unwrap();
             let img = decode_srgb(&img);
             let (x, y, new) = self.lookup(name);
