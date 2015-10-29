@@ -8,7 +8,6 @@ use std::collections::{HashMap, HashSet};
 use std::fs::{File, walk_dir};
 use std::io::prelude::*;
 use std::io::{BufWriter};
-use std::process::{Command, Stdio};
 use std::mem::{swap};
 use std::path::{Path};
 use {FloatImage, decode_srgb, encode_srgb, resize, save};
