@@ -160,7 +160,7 @@ fn import_old_tilesheet(name: &str) {
     let name = format!("work/tilesheets/Tilesheet {}.txt", name);
     let path = Path::new(&name);
     let mut out = File::create(&path).unwrap();
-    let reg = Regex::new(r"Edit\s+[0-9]+\s+(.+?)\s+[A-Z0-9]+\s+([0-9]+)\s+([0-9]+)\s+16px, 32px\r?\n").unwrap();
+    let reg = Regex::new(r"Edit\s+Translate\s+[0-9]+\s+(.+?)\s+[A-Z0-9]+\s+([0-9]+)\s+([0-9]+)\s+16px,32px\r?\n").unwrap();
     for cap in reg.captures_iter(&data) {
         let name = cap.at(1).unwrap();
         let x = cap.at(2).unwrap();
